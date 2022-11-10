@@ -6,6 +6,9 @@
         <entry key="app/src/main/res/drawable/avathar.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/avathar1.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/bg_et_message.xml" value="0.1845" />
+        <entry key="app/src/main/res/drawable/bg_receiver.xml" value="0.1845" />
+        <entry key="app/src/main/res/drawable/bg_sender.xml" value="0.1845" />
+        <entry key="app/src/main/res/drawable/more.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/send.xml" value="0.1845" />
         <entry key="app/src/main/res/layout/activity_chat_details.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
@@ -14,6 +17,8 @@
         <entry key="app/src/main/res/layout/fragment_call.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_status.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/sample_receiver.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/sample_sender.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/sample_show_user.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.33" />
       </map>

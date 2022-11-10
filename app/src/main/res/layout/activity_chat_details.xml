@@ -7,13 +7,14 @@
     android:layout_height="match_parent"
     android:background="#F1DFC4"
     tools:context=".ChatDetailsActivity">
+
   <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/chatRecyclerView"
+      android:id="@+id/chatRecyclerView"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-    android:layout_marginBottom="3dp"
-    android:layout_below="@+id/toolBar"
-    android:layout_above="@id/linear"/>
+      android:layout_above="@id/linear"
+      android:layout_below="@+id/toolBar"
+      android:layout_marginBottom="3dp" />
 
   <LinearLayout
       android:id="@+id/linear"
@@ -46,45 +47,98 @@
   </LinearLayout>
 
   <androidx.appcompat.widget.Toolbar
-    android:id="@+id/toolBar"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-      android:theme="?attr/actionBarTheme"
-      android:minHeight="?attr/actionBarSize"
-    android:background="?attr/colorPrimary">
-
-  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/toolBar"
       android:layout_width="match_parent"
-      android:layout_height="match_parent">
+      android:layout_height="wrap_content"
+      android:background="?attr/colorPrimary"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="?attr/actionBarTheme">
 
-    <ImageView
-        android:id="@+id/backArrow"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/backArrow"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/back_arrow"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.476" />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/profileImage"
+          android:layout_width="45dp"
+          android:layout_height="45dp"
+          android:layout_marginStart="5dp"
+          android:layout_marginLeft="5dp"
+          android:padding="5dp"
+          android:src="@drawable/avathar1"
+          app:civ_border_color="@color/white"
+          app:civ_border_width="1dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/backArrow"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/back_arrow"
-        app:layout_constraintVertical_bias="0.476"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <de.hdodenhof.circleimageview.CircleImageView
-      android:id="@+id/profileImage"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-      android:layout_marginStart="5dp"
-      android:layout_marginLeft="5dp"
-      android:padding="5dp"
-      app:civ_border_width="1dp"
-      app:layout_constraintStart_toEndOf="@+id/backArrow"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:civ_border_color="@color/white"
-      android:src="@drawable/avathar1"/>
+        app:layout_constraintStart_toEndOf="@id/profileImage"
+        android:text="UserName"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
 
 
+      <ImageView
+          android:id="@+id/imageView_call"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="15dp"
+          android:layout_marginRight="15dp"
+          android:src="@drawable/call"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/imageView_videoCall"/>
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+      <ImageView
+          android:id="@+id/imageView_videoCall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="15dp"
+          android:layout_marginRight="15dp"
+          android:src="@drawable/video_call"
+          app:layout_constraintEnd_toStartOf="@id/imageView_menu"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+
+
+      <ImageView
+          android:id="@+id/imageView_menu"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="15dp"
+          android:layout_marginRight="15dp"
+          android:src="@drawable/menu"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
   </androidx.appcompat.widget.Toolbar>
 

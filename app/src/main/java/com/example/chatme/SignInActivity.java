@@ -32,7 +32,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class SignInActivity extends AppCompatActivity {
 
-    ActivitySignInBinding binding;
+     ActivitySignInBinding binding;
     FirebaseAuth mAuth;
     FirebaseDatabase database;
     ProgressDialog progressDialog;
@@ -155,6 +155,7 @@ public class SignInActivity extends AppCompatActivity {
                             users.setUserName(user.getDisplayName());
                             users.setProfilePick(user.getPhotoUrl().toString());
                             database.getReference().child("users").child(user.getUid()).setValue(users);
+
                             Intent intent=new Intent(SignInActivity.this,MainActivity.class);
                             startActivity(intent);
                             Toast.makeText(SignInActivity.this, "Sign in with Google", Toast.LENGTH_SHORT).show();
