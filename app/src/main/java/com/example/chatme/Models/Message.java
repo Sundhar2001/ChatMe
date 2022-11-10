@@ -2,7 +2,7 @@ package com.example.chatme.Models;
 
 public class Message {
 
-    String uId,message,messageId;
+    String uId, message, messageId;
     Long timestamp;
 
 
@@ -18,11 +18,13 @@ public class Message {
         this.uId = uId;
         this.message = message;
     }
-    public Message(){
+
+    public Message() {
 
     }
 
     //generating getter and setter
+
 
     public String getuId() {
         return uId;
