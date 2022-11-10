@@ -47,7 +47,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.group:
-                Toast.makeText(this, "group", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "group", Toast.LENGTH_SHORT).show();
+                Intent intent1=new Intent(MainActivity.this,GroupChatActivity.class);
+                startActivity(intent1);
+                finish();
                 break;
 
             case R.id.logout:
@@ -55,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 mAuth.signOut();
                 Intent intent=new Intent(MainActivity.this,SignInActivity.class);
                 startActivity(intent);
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);

@@ -60,8 +60,10 @@ public class SignUpActivity extends AppCompatActivity {
                                             binding.txtPassword.getText().toString());
                                     String id=task.getResult().getUser().getUid();
                                     database.getReference().child("users").child(id).setValue(users);
+
                                     Intent intent=new Intent(SignUpActivity.this,SignInActivity.class);
                                     startActivity(intent);
+                                    finish();
 
                                     Toast.makeText(SignUpActivity.this, "SignUp Successful", Toast.LENGTH_SHORT).show();
                                 }
@@ -84,6 +86,7 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(SignUpActivity.this,SignInActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/drawable/more.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/send.xml" value="0.1845" />
         <entry key="app/src/main/res/layout/activity_chat_details.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_group_chat.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />

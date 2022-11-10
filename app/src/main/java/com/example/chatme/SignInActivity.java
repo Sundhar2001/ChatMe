@@ -76,6 +76,7 @@ public class SignInActivity extends AppCompatActivity {
 
                                         Intent intent=new Intent(SignInActivity.this,MainActivity.class);
                                         startActivity(intent);
+                                        finish();
 
                                     }
                                     else
@@ -97,12 +98,14 @@ public class SignInActivity extends AppCompatActivity {
         if (mAuth.getCurrentUser()!=null){
             Intent intent=new Intent(SignInActivity.this,MainActivity.class);
             startActivity(intent);
+            finish();
         }
         binding.txtClickToSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(SignInActivity.this,SignUpActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -158,6 +161,7 @@ public class SignInActivity extends AppCompatActivity {
 
                             Intent intent=new Intent(SignInActivity.this,MainActivity.class);
                             startActivity(intent);
+                            finish();
                             Toast.makeText(SignInActivity.this, "Sign in with Google", Toast.LENGTH_SHORT).show();
                         }
                         else
