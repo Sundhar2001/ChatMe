@@ -3,16 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1239488731920619" />
+        <entry key="app/src/main/res/drawable-v24/bg_button.xml" value="0.206" />
+        <entry key="app/src/main/res/drawable/about.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/avathar.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/avathar1.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/bg_et_message.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/bg_receiver.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/bg_sender.xml" value="0.1845" />
+        <entry key="app/src/main/res/drawable/bottom_sheet.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/more.xml" value="0.1845" />
+        <entry key="app/src/main/res/drawable/privacy.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/send.xml" value="0.1845" />
         <entry key="app/src/main/res/layout/activity_chat_details.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_group_chat.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_call.xml" value="0.35625" />
@@ -30,5 +36,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>
