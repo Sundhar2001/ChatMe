@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/chat_background"
+    android:background="#C7EAFA"
     tools:context=".SignInActivity">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/watsapp"/>
+            android:src="@drawable/chatme"/>
 
 
 
@@ -36,7 +36,7 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="9dp"
-            android:textColor="@color/lightGrey"
+            android:textColor="@color/black"
             android:textColorHint="@color/chatBackground"/>
 
         <EditText
@@ -47,7 +47,8 @@
             android:ems="10"
             android:hint="password"
             android:padding="9dp"
-            android:textColor="@color/lightGrey"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
             android:textColorHint="@color/chatBackground"/>
 
         <TextView
@@ -62,7 +63,7 @@
 
         <Button
             android:id="@+id/signIn_signIn"
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:padding="15dp"
@@ -79,7 +80,7 @@
 
             <Button
                 android:id="@+id/signIn_google"
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="65dp"
                 android:layout_marginEnd="4dp"
                 android:layout_marginRight="4dp"
@@ -94,7 +95,7 @@
 
             <Button
                 android:id="@+id/signIn_fb"
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_marginRight="4dp"
@@ -109,14 +110,14 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/signIn_signUpWithPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SignUp With Phone"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"/>
+<!--        <TextView-->
+<!--            android:id="@+id/signIn_signUpWithPhone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="SignUp With Phone"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="@color/black"/>-->
 
 
     </LinearLayout>

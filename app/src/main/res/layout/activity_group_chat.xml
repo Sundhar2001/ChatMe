@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1DFC4"
+    android:background="@drawable/color"
     tools:context=".GroupChatActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -41,7 +41,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="0"
-            android:src="@drawable/send"
+            android:src="@drawable/send2"
             android:layout_marginEnd="4dp"
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp" />
@@ -100,29 +100,29 @@
 
 
 
-            <ImageView
-                android:id="@+id/imageView_call"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/call"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/imageView_videoCall"/>
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView_call"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:src="@drawable/call"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintEnd_toStartOf="@id/imageView_videoCall"/>-->
 
 
 
-            <ImageView
-                android:id="@+id/imageView_videoCall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/video_call"
-                app:layout_constraintEnd_toStartOf="@id/imageView_menu"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView_videoCall"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:src="@drawable/video_call"-->
+<!--                app:layout_constraintEnd_toStartOf="@id/imageView_menu"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
 
 
 

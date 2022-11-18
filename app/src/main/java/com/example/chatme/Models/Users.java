@@ -9,6 +9,7 @@ public class Users {
     }
 
     public Users(String profilePick, String userName, String mail, String password, String userId, String lastMessage, String status) {
+
         this.profilePick = profilePick;
         this.userName = userName;
         this.mail = mail;

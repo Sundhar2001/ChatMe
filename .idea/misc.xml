@@ -12,14 +12,16 @@
         <entry key="app/src/main/res/drawable/bg_receiver.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/bg_sender.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/bottom_sheet.xml" value="0.206" />
+        <entry key="app/src/main/res/drawable/color.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/menu.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/more.xml" value="0.1845" />
         <entry key="app/src/main/res/drawable/privacy.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/send.xml" value="0.1845" />
-        <entry key="app/src/main/res/layout/activity_chat_details.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_chat_details.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_group_chat.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_call.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.35625" />
@@ -28,6 +30,7 @@
         <entry key="app/src/main/res/layout/sample_sender.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/sample_show_user.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.33" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1345" />
       </map>
     </option>
   </component>

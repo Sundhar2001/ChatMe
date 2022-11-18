@@ -57,16 +57,20 @@ public class SettingsActivity extends AppCompatActivity {
         binding.save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String aboutus = binding.aboutUs.getText().toString();
+                String aboutus = binding.textAbout.getText().toString();
                 String userName = binding.txtUserName.getText().toString();
 
-                if (!binding.txtUserName.getText().toString().equals("") && !binding.aboutUs.getText().toString().equals("")) {
+                if (!binding.txtUserName.getText().toString().equals("") && !binding.textAbout.getText().toString().equals("")) {
                     HashMap<String, Object> obj = new HashMap<>();
                     obj.put("userName", userName);
                     obj.put("about_us", aboutus);
 
                     database.getReference().child("users").child(FirebaseAuth.getInstance().getUid())
                             .updateChildren(obj);
+
+                    Intent intent=new Intent(SettingsActivity.this,MainActivity.class);
+                    startActivity(intent);
+                    finish();
 
                     Toast.makeText(SettingsActivity.this, "Profile updated", Toast.LENGTH_SHORT).show();
                 }

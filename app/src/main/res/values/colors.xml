@@ -13,8 +13,8 @@
 
     //MyColors
 
-    <color name="colorPrimary">#592761</color>
-    <color name="colorPrimaryDark">#200B23</color>
+    <color name="colorPrimary">#43C5FF</color>
+    <color name="colorPrimaryDark">#12455C</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="lightGrey">#BAB8B8</color>
     <color name="watsappColor">#7C088F</color>
@@ -23,9 +23,11 @@
     <color name="chat_background">#FBD59A</color>
     <color name="fb_color">#3886FB</color>
     <color name="lightGreen">#C5E69F</color>
-    <color name="settingsIconColor">#9C27B0</color>
+    <color name="settingsIconColor">#00B0FF</color>
     <color name="greyBackground">#ACACAC</color>
-    <color name="chatBackground">#787373</color>
+    <color name="chatBackground">@android:color/tab_indicator_text</color>
+
+
 
 
 

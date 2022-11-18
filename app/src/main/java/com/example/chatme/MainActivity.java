@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 //                Toast.makeText(this, "group", Toast.LENGTH_SHORT).show();
                 Intent intent1=new Intent(MainActivity.this,GroupChatActivity.class);
                 startActivity(intent1);
-                finish();
+
                 break;
 
             case R.id.logout:

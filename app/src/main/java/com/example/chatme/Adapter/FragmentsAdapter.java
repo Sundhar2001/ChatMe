@@ -24,6 +24,7 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
             case 0:return new ChatFragment();
             case 1:return new StatusFragment();
             case 2:return new CallFragment();
+
             default:return new ChatFragment();
         }
 
@@ -31,13 +32,13 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 1;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        String title=null;
+        String title="CHATS";
 
         if (position==0){
             title="CHATS";

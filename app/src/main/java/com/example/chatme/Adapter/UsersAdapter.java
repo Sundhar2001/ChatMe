@@ -97,6 +97,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
         ImageView image;
         TextView userName,lastMessage;
 
+
         //2 extends fom ViewHolder
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -104,6 +105,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
             image=itemView.findViewById(R.id.profileImage);
             userName=itemView.findViewById(R.id.userNameList);
             lastMessage=itemView.findViewById(R.id.lastMessage);
+
         }
     }
 }

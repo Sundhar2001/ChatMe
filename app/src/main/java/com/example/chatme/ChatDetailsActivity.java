@@ -6,7 +6,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import com.example.chatme.Fragment.ChatAdapter;
 import com.example.chatme.Models.Message;
@@ -76,7 +79,9 @@ public class ChatDetailsActivity extends AppCompatActivity {
                             messageModels.setMessageId(snapshot1.getKey());
                             messages.add(messageModels);
                         }
-                        chatAdapter.notifyDataSetChanged();
+                        chatAdapter.notifyItemChanged(messages.indexOf(snapshot.getKey()));
+
+//                        chatAdapter.notifyDataSetChanged();
                     }
 
                     @Override
@@ -85,35 +90,74 @@ public class ChatDetailsActivity extends AppCompatActivity {
                     }
                 });
 
+        binding.imageViewMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                PopupMenu popupMenu=new PopupMenu(ChatDetailsActivity.this,binding.imageViewMenu);
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()){
+
+                            case R.id.settings:
+                                Intent intent2=new Intent(ChatDetailsActivity.this,SettingsActivity.class);
+                                startActivity(intent2);
+                                break;
+
+                            case R.id.group:
+                                Intent intent3=new Intent(ChatDetailsActivity.this,GroupChatActivity.class);
+                                startActivity(intent3);
+                                break;
+
+                        }
+                        return false;
+                    }
+                });
+
+                popupMenu.inflate(R.menu.menu);
+                popupMenu.show();
+                
+            }
+        });
+
         binding.send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String message=binding.enterMessage.getText().toString();
                 final Message messageModel=new Message(senderId,message);
                 messageModel.setTimestamp(new Date().getTime());
-                binding.enterMessage.setText("");
 
-                //STORE MESSAGE TO DATABASE
-                database.getReference().child("chats")
-                        .child(senderRoom)
-                        .push()
-                        .setValue(messageModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
 
-                                database.getReference().child("chats")
-                                        .child(receiverRoom)
-                                        .push()
-                                        .setValue(messageModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                            @Override
-                                            public void onSuccess(Void unused) {
+                if (binding.enterMessage.getText().toString().equals("")){
 
-                                            }
-                                        });
-                            }
-                        });
+
+                }else {
+
+                    //STORE MESSAGE TO DATABASE
+                    database.getReference().child("chats")
+                            .child(senderRoom)
+                            .push()
+                            .setValue(messageModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+
+                                    database.getReference().child("chats")
+                                            .child(receiverRoom)
+                                            .push()
+                                            .setValue(messageModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                @Override
+                                                public void onSuccess(Void unused) {
+
+                                                }
+                                            });
+                                }
+                            });
+                    binding.enterMessage.setText("");
+                }
             }
         });
 
     }
+
 }

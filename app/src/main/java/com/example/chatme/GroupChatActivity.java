@@ -85,16 +85,24 @@ public class GroupChatActivity extends AppCompatActivity {
                 final Message model=new Message(senderId,message);
                 model.setTimestamp(new Date().getTime());
 
-                binding.enterMessage.setText("");
-                database.getReference().child("Group Chat")
-                        .push()
-                        .setValue(model).addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                Toast.makeText(GroupChatActivity.this, "Message send.", Toast.LENGTH_SHORT).show();
-                                
-                            }
-                        });
+                if (binding.enterMessage.getText().toString().equals("")) {
+
+                }
+                else {
+
+
+                    binding.enterMessage.setText("");
+                    database.getReference().child("Group Chat")
+                            .push()
+                            .setValue(model).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    Toast.makeText(GroupChatActivity.this, "Message send.", Toast.LENGTH_SHORT).show();
+
+                                }
+                            });
+                    binding.enterMessage.setText("");
+                }
             }
         });
     }
