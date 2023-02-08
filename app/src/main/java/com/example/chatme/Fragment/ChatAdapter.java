@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.chatme.ChatDetailsActivity;
 import com.example.chatme.Models.Message;
+import com.example.chatme.Models.Users;
 import com.example.chatme.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
@@ -124,6 +124,11 @@ public class ChatAdapter extends RecyclerView.Adapter {
             SimpleDateFormat simpleDateFormat=new SimpleDateFormat("HH:mm");
             String strDate=simpleDateFormat.format(date);
             ((ReceiverViewHolder) holder).receiverTime.setText(strDate);
+//
+//            //GETTING USER NAME
+//            ArrayList<Users> userList = new ArrayList<>();
+//            Users data =userList.get(position);
+//            ((ReceiverViewHolder) holder).receiverName.setText("");
         }
 
     }
@@ -137,12 +142,13 @@ public class ChatAdapter extends RecyclerView.Adapter {
     // RECEIVER
     public class ReceiverViewHolder extends RecyclerView.ViewHolder{
 
-        TextView receiverMsg,receiverTime;
+        TextView receiverMsg,receiverTime,receiverName;
 
         public ReceiverViewHolder(@NonNull View itemView) {
             super(itemView);
             receiverMsg=itemView.findViewById(R.id.receiver_txt);
             receiverTime=itemView.findViewById(R.id.receiverTime);
+//            receiverName=itemView.findViewById(R.id.name_hint);
 
         }
     }
